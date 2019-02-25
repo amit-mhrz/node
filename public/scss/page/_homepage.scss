@@ -1,0 +1,762 @@
+@font-face {
+    font-family: 'National-RegularItalic';
+    src: url('../fonts/NationalWeb-RegularItalic.eot');
+    src: url('../fonts/NationalWeb-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-RegularItalic.woff2') format('woff2'),
+        url('../fonts/NationalWeb-RegularItalic.woff') format('woff'),
+        url('../fonts/NationalWeb-RegularItalic.ttf') format('truetype'),
+        url('../fonts/NationalWeb-RegularItalic.svg#National-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'National-Thin';
+    src: url('../fonts/NationalWeb-Thin.eot');
+    src: url('../fonts/NationalWeb-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-Thin.woff2') format('woff2'),
+        url('../fonts/NationalWeb-Thin.woff') format('woff'),
+        url('../fonts/NationalWeb-Thin.ttf') format('truetype'),
+        url('../fonts/NationalWeb-Thin.svg#National-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'National-ExtraboldItalic';
+    src: url('../fonts/NationalWeb-ExtraboldItalic.eot');
+    src: url('../fonts/NationalWeb-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-ExtraboldItalic.woff2') format('woff2'),
+        url('../fonts/NationalWeb-ExtraboldItalic.woff') format('woff'),
+        url('../fonts/NationalWeb-ExtraboldItalic.ttf') format('truetype'),
+        url('../fonts/NationalWeb-ExtraboldItalic.svg#National-ExtraboldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'National-Extrabold';
+    src: url('../fonts/NationalWeb-Extrabold.eot');
+    src: url('../fonts/NationalWeb-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-Extrabold.woff2') format('woff2'),
+        url('../fonts/NationalWeb-Extrabold.woff') format('woff'),
+        url('../fonts/NationalWeb-Extrabold.ttf') format('truetype'),
+        url('../fonts/NationalWeb-Extrabold.svg#National-Extrabold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'National-ThinItalic';
+    src: url('../fonts/NationalWeb-ThinItalic.eot');
+    src: url('../fonts/NationalWeb-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-ThinItalic.woff2') format('woff2'),
+        url('../fonts/NationalWeb-ThinItalic.woff') format('woff'),
+        url('../fonts/NationalWeb-ThinItalic.ttf') format('truetype'),
+        url('../fonts/NationalWeb-ThinItalic.svg#National-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'National-Light';
+    src: url('../fonts/NationalWeb-Light.eot');
+    src: url('../fonts/NationalWeb-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-Light.woff2') format('woff2'),
+        url('../fonts/NationalWeb-Light.woff') format('woff'),
+        url('../fonts/NationalWeb-Light.ttf') format('truetype'),
+        url('../fonts/NationalWeb-Light.svg#National-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'National-Medium';
+    src: url('../fonts/NationalWeb-Medium.eot');
+    src: url('../fonts/NationalWeb-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-Medium.woff2') format('woff2'),
+        url('../fonts/NationalWeb-Medium.woff') format('woff'),
+        url('../fonts/NationalWeb-Medium.ttf') format('truetype'),
+        url('../fonts/NationalWeb-Medium.svg#National-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'National-Bold';
+    src: url('../fonts/NationalWeb-Bold.eot');
+    src: url('../fonts/NationalWeb-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-Bold.woff2') format('woff2'),
+        url('../fonts/NationalWeb-Bold.woff') format('woff'),
+        url('../fonts/NationalWeb-Bold.ttf') format('truetype'),
+        url('../fonts/NationalWeb-Bold.svg#National-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'National-Semibold';
+    src: url('../fonts/NationalWeb-Semibold.eot');
+    src: url('../fonts/NationalWeb-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-Semibold.woff2') format('woff2'),
+        url('../fonts/NationalWeb-Semibold.woff') format('woff'),
+        url('../fonts/NationalWeb-Semibold.ttf') format('truetype'),
+        url('../fonts/NationalWeb-Semibold.svg#National-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'National-SemiboldItalic';
+    src: url('../fonts/NationalWeb-SemiboldItalic.eot');
+    src: url('../fonts/NationalWeb-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/NationalWeb-SemiboldItalic.woff') format('woff'),
+        url('../fonts/NationalWeb-SemiboldItalic.ttf') format('truetype'),
+        url('../fonts/NationalWeb-SemiboldItalic.svg#National-SemiboldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'National-LightItalic';
+    src: url('../fonts/NationalWeb-LightItalic.eot');
+    src: url('../fonts/NationalWeb-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-LightItalic.woff2') format('woff2'),
+        url('../fonts/NationalWeb-LightItalic.woff') format('woff'),
+        url('../fonts/NationalWeb-LightItalic.ttf') format('truetype'),
+        url('../fonts/NationalWeb-LightItalic.svg#National-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'National-BookItalic';
+    src: url('../fonts/NationalWeb-BookItalic.eot');
+    src: url('../fonts/NationalWeb-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-BookItalic.woff2') format('woff2'),
+        url('../fonts/NationalWeb-BookItalic.woff') format('woff'),
+        url('../fonts/NationalWeb-BookItalic.ttf') format('truetype'),
+        url('../fonts/NationalWeb-BookItalic.svg#National-BookItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'National-MediumItalic';
+    src: url('../fonts/NationalWeb-MediumItalic.eot');
+    src: url('../fonts/NationalWeb-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-MediumItalic.woff2') format('woff2'),
+        url('../fonts/NationalWeb-MediumItalic.woff') format('woff'),
+        url('../fonts/NationalWeb-MediumItalic.ttf') format('truetype'),
+        url('../fonts/NationalWeb-MediumItalic.svg#National-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'National-BlackItalic';
+    src: url('../fonts/NationalWeb-BlackItalic.eot');
+    src: url('../fonts/NationalWeb-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-BlackItalic.woff2') format('woff2'),
+        url('../fonts/NationalWeb-BlackItalic.woff') format('woff'),
+        url('../fonts/NationalWeb-BlackItalic.ttf') format('truetype'),
+        url('../fonts/NationalWeb-BlackItalic.svg#National-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'National-Regular';
+    src: url('../fonts/NationalWeb-Regular.eot');
+    src: url('../fonts/NationalWeb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-Regular.woff2') format('woff2'),
+        url('../fonts/NationalWeb-Regular.woff') format('woff'),
+        url('../fonts/NationalWeb-Regular.ttf') format('truetype'),
+        url('../fonts/NationalWeb-Regular.svg#National-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'National-BoldItalic';
+    src: url('../fonts/NationalWeb-BoldItalic.eot');
+    src: url('../fonts/NationalWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-BoldItalic.woff2') format('woff2'),
+        url('../fonts/NationalWeb-BoldItalic.woff') format('woff'),
+        url('../fonts/NationalWeb-BoldItalic.ttf') format('truetype'),
+        url('../fonts/NationalWeb-BoldItalic.svg#National-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'National-Black';
+    src: url('../fonts/NationalWeb-Black.eot');
+    src: url('../fonts/NationalWeb-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-Black.woff2') format('woff2'),
+        url('../fonts/NationalWeb-Black.woff') format('woff'),
+        url('../fonts/NationalWeb-Black.ttf') format('truetype'),
+        url('../fonts/NationalWeb-Black.svg#National-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'National-Book';
+    src: url('../fonts/NationalWeb-Book.eot');
+    src: url('../fonts/NationalWeb-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NationalWeb-Book.woff2') format('woff2'),
+        url('../fonts/NationalWeb-Book.woff') format('woff'),
+        url('../fonts/NationalWeb-Book.ttf') format('truetype'),
+        url('../fonts/NationalWeb-Book.svg#National-Book') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon/fonts/icomoon.eot?tknmu');
+    src:  url('../fonts/icomoon/fonts/icomoon.eot?tknmu#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon/fonts/icomoon.ttf?tknmu') format('truetype'),
+      url('../fonts/icomoon/fonts/icomoon.woff?tknmu') format('woff'),
+      url('../fonts/icomoon/fonts/icomoon.svg?tknmu#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+      font-family: 'National-Regular';
+  }
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-culture:before {
+    content: "\e900";
+  }
+  .icon-future:before {
+    content: "\e901";
+    color: #403e75;
+  }
+  .icon-innovation:before {
+    content: "\e902";
+  }
+  .icon-search:before {
+    content: "\e903";
+    color: #9f9eba;
+  }
+  
+header {
+    background-color: $primary;
+}
+.bg-dark {
+    background-color: transparent !important;
+}
+h1 {
+    font-size: 50px;
+    padding-left: 30px; 
+    span {
+        font-size: 20px;
+        margin-left: -30px;
+        color: $primary;
+        display: inline-block;
+        background-color: #fff;
+        padding: 14px 10px 4px;
+    }
+}
+.header {
+    &__search {
+        display: inline-block;
+        margin-right: 20px;
+
+        .form-group {
+            border: 1px solid #9F9EBA;
+            margin: 0px;
+
+            span {
+                display: inline-block;
+                line-height: 50px;
+                padding: 0 13px;
+                font-size: 25px;
+                vertical-align: middle;
+            }
+            input {
+                display: inline-block;
+                line-height: 50px;
+                background-color: transparent;
+                padding: 0 24px;
+                border: none;
+                vertical-align: middle;
+                color: #fff;
+                font-size: 18px;
+                border-left: 1px solid #9F9EBA;
+
+                &::placeholder {
+                    color: #9F9EBA;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.navbar-dark {
+    .navbar-toggler {
+        border: 1px solid #9F9EBA;
+        border-radius: 0px;
+        height: 50px;
+        vertical-align: middle;
+    }
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 13px;
+    color: #403E75;
+}
+.section {
+    &__filter {
+        padding: 40px 0 70px;
+
+        p {
+            font-size: 18px;
+            color: #4A4A4A;
+        }
+        span.icon {
+            &:before {
+             color: rgba(#1D2128, 0.25);
+            }
+        }
+        span.icon.icon-innovation {
+            font-size: 47px;
+        }
+        span.icon.icon-culture {
+            font-size: 44px;
+        }
+        span.icon.icon-future {
+            font-size: 44px;
+        }
+        .row .col-sm-3:nth-child(1) {
+            .filter__info {
+                margin-bottom: 58px;
+            }
+        }
+        .row .col-sm-3:not(:nth-child(1)) {
+            .filter__info {
+                margin-bottom: 40px;
+            }
+        }
+        label {
+            font-size: 18px;
+            position: relative;
+            color: #4A4A4A;
+            padding-left: 37px;
+            margin-bottom: 15px;
+        }
+        select {
+            display: inline-block;
+            width: 100%;
+            border: 1px solid rgba(#1D1B23, 0.25);
+            padding: 10px 15px;
+            font-size: 18px;
+            -webkit-appearance: none;
+            position: relative;
+        }
+    } 
+}
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    
+
+    &:after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #403E75;
+        top: 45%;
+        right: 15px;
+    }
+}
+.filter {
+    &__contentType {
+        .col-sm-4 {
+            padding: 9px;
+        }
+        .icon__holder {
+            height: 115px;
+            width: 115px;
+            display: inline-flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+            background-color: #EDEDED;
+            border: 1px solid #EDEDED;
+
+            &.active, &:hover {
+                cursor: pointer;
+                background-color: transparent;
+                border: 1px solid #EDEDED;
+                .icon {
+                    &:before {
+                        color: #403E75 !important;
+                    }
+                }
+            }
+        }
+        .txt {
+            text-align: center;
+            margin-top: 14px;
+
+            p {
+                font-size: 18px;
+                color: #4A4A4A;
+            }
+        }
+    }
+    
+    &__info {
+        // margin-bottom: 58px;
+    }
+}
+
+
+/* The container */
+.check-box {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .check-box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .check-box:hover input ~ .checkmark {
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .check-box input:checked ~ .checkmark {
+    background-color: #403E75;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .check-box input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .check-box .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: transparent;
+  }
+
+  .section {
+      &__timeline {
+          height: 45px;
+          background-color: #D8D8D8;
+      }
+      &__products {
+        background-color: #EAEFF3;    
+        padding: 30px 0 100px;
+
+        .item {
+            &__box {
+                box-shadow: 0px 0px 20px rgba(#000, 0.10);
+                background-color: #fff;
+                margin-bottom: 30px;
+            }
+            &__img {
+                background-color: #D8D8D8;
+                height: 240px;
+            }
+            &__desc {
+                padding: 22px 24px;
+            }
+            
+            &__case {
+                font-size: 12px;
+
+                span.icon-case {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    vertical-align: middle;
+                    margin-right: 12px;
+                    background-color: #D8D8D8;
+                    margin-bottom: 11px;
+                }
+            }
+            &__txt h3 {
+                font-size: 30px;
+                color: #403E75;
+            }
+        }
+      }
+      &__appliedFilters {
+          background-color: #EAEFF3;
+          padding: 41px 0 55px;
+
+          .showing {
+             p {
+                 font-size: 18px;
+                 color: #4A4A4A;
+             }
+          }
+          .appliedFilters {
+              text-align: right;
+
+              li {
+                  display: inline-block;
+                  margin-right: 5px;
+
+                  a {
+                      font-size: 12px;
+                      position: relative;
+                      line-height: 22px;
+                      border: 1px solid #403E75;
+                      border-radius: 50px;
+                      width: 100px;
+                      text-align: left;
+                      display: inline-block;
+                      padding: 0 10px;
+                      position: relative;
+                       
+                    //   &:after {
+                    //       content: "x";
+                    //       font-size:  30px;
+                    //       transform: rotateZ(90deg);
+                    //       color: #403E75;
+                    //       position: absolute;
+                    //       width: 20px;
+                    //       font-family: 'National-Book';
+                    //       height: 20px;
+                    //       top: 25%;
+                    //       right: 10px;
+                    //   }
+                  }
+              }
+          }
+      }
+  }
+  footer {
+      padding: 40px 0;
+      background-color: #403E75;
+      color: #fff;
+
+      a {
+        color: #fff;
+        position: relative;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+        font-size: 20px;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 2px;
+            background-color: #fff;
+            top: 45%;
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            left: -25px;
+        }
+        &:hover {
+            color: #fff;
+            left: 15px;
+            &:before { 
+                opacity: 1;
+            }
+        }
+      }
+      li {
+          margin-bottom: 3px;
+      }
+      .copyrights {
+          text-align: right;
+          p {
+              color: #fff;
+              opacity: 0.5;
+          }
+      }
+  }
+  .rangeSlider__content {
+    display: inline-block;
+    height: 45px;
+    width: 100%;
+    // background-image: url(../img/timeline.svg);
+}
+.noUi-target {
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #D3D3D3;
+    box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+    height: 45px;
+}
+.noUi-horizontal .noUi-handle {
+    width: 10px;
+    box-shadow: rgba(#000, 0.5);
+    height: 45px;
+    left: -17px;
+    top: -2px;
+}
+html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
+    right: -5px;
+}
+.noUi-handle:after, .noUi-handle:before {
+    content: none;
+}
+#rangeSlider svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.noUi-connect {
+    position: relative;
+    background-color: #403e74;
+}
+#rangeSlider svg {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    pointer-events: none;
+    left: 0;
+}
+path {
+    fill: #fff;
+    stroke: #fff;
+}
+svg text {
+    fill: #fff;
+}
+.icon-close {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}
+.filter {
+    &__sticky {
+        display: none;
+    }
+    &__fade {
+        display: block;
+    }
+}
+.section {
+    &__filter {
+        position: fixed;
+        top: 156px;
+        left: 0;
+        width: 100%;
+        right: 0;
+        display: inline-block;
+        z-index: 99;
+        background-color: #fff;
+
+        &.sticky {
+            padding: 40px 0 44px;
+            .filter {
+                &__sticky {
+                    display: block;
+                }
+                &__fade {
+                    display: none;
+                }
+            }
+            
+            .col-sm-3 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 20%;
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+            .filter__date {
+                li {
+                    width: 30%;
+                    float: left;
+                }
+                li:nth-child(2) {
+                    width: 20%;
+                    padding-left: 20px; 
+                }
+            }
+        }
+    }
+}
+header {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0px;
+    z-index: 999;
+}
+section.content__bottom {
+    margin-top: 664px;
+}
+section.section__filter.sticky {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+section.content__bottom.sticky {
+    margin-top: 378px;
+}
+.icon-close img {
+    width: 8px;
+}
+// span.icon.active:before {
+//     color: #403E75 !important;
+// }

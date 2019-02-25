@@ -23,13 +23,24 @@ app.get('/', (req, res) => {
     console.log('error');
   }
 
-  const names = records.map(record => record.get("Title"));
-  const desc = records.map(record => record.get("Description"));
+  const names         = records.map(record => record.get("Title"));
+  const image         = records.map(record => record.get("Image"));
+  const desc          = records.map(record => record.get("Description"));
+  const content_type  = records.map(record => record.get("Content Type"));
+  const cities        = records.map(record => record.get("City"));
+  const focus_area    = records.map(record => record.get("Focus Area"));
+  const impact        = records.map(record => record.get("Impact"));
+  console.log(image);
 
     res.render('index', {
     title: 'Homepage',
     namelist: names,
-    desclist: desc
+    image: image,
+    desclist: desc,
+    ctype: content_type,
+    cities: cities,
+    focus_area: focus_area,
+    impact: impact
   });
 })
 
