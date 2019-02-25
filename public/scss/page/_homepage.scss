@@ -437,8 +437,7 @@ h2 {
     }
 }
 
-
-/* The container */
+/* Customize the label (the container) */
 .check-box {
     display: block;
     position: relative;
@@ -452,56 +451,61 @@ h2 {
     user-select: none;
   }
   
-  /* Hide the browser's default radio button */
+  /* Hide the browser's default checkbox */
   .check-box input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
+    height: 0;
+    width: 0;
   }
   
-  /* Create a custom radio button */
+  /* Create a custom checkbox */
   .checkmark {
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 0;
-    height: 18px;
-    width: 18px;
-    background-color: #eee;
+    height: 25px;
     border-radius: 50%;
+    width: 25px;
+    background-color: #eee;
   }
   
   /* On mouse-over, add a grey background color */
   .check-box:hover input ~ .checkmark {
     background-color: #ccc;
-    cursor: pointer;
   }
   
-  /* When the radio button is checked, add a blue background */
+  /* When the checkbox is checked, add a blue background */
   .check-box input:checked ~ .checkmark {
     background-color: #403E75;
   }
   
-  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
   
-  /* Show the indicator (dot/circle) when checked */
+  /* Show the checkmark when checked */
   .check-box input:checked ~ .checkmark:after {
     display: block;
   }
   
-  /* Style the indicator (dot/circle) */
+  /* Style the checkmark/indicator */
   .check-box .checkmark:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: transparent;
+    left: 9px;
+    top: 5px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
+
+
 
   .section {
       &__timeline {
@@ -635,7 +639,7 @@ h2 {
   }
   .rangeSlider__content {
     display: inline-block;
-    height: 45px;
+    height: 47px;
     width: 100%;
     // background-image: url(../img/timeline.svg);
 }
@@ -644,12 +648,12 @@ h2 {
     border-radius: 4px;
     border: 1px solid #D3D3D3;
     box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
-    height: 45px;
+    height: 47px;
 }
 .noUi-horizontal .noUi-handle {
     width: 10px;
     box-shadow: rgba(#000, 0.5);
-    height: 45px;
+    height: 47px;
     left: -17px;
     top: -2px;
 }
@@ -757,6 +761,80 @@ section.content__bottom.sticky {
 .icon-close img {
     width: 8px;
 }
-// span.icon.active:before {
-//     color: #403E75 !important;
-// }
+.wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow-x: hidden;
+}
+div#collapsibleNavbar {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    height: 100vh;
+    background: #fff;
+    transition: all 0.3s linear;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-dark .navbar-nav .nav-item {
+    border-bottom: 1px solid #ccc; 
+    &:last-child {
+        border: none;
+    }
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #4e4e4e;
+    font-size: 20px;
+    text-align: left;
+    padding: 15px 20px;
+    position: relative;
+    left: 0;
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        width: 15px;
+        height: 3px;
+        background-color: #403e74;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+        color: #403e74;
+        left: 25px;
+        
+        &:after {
+            opacity: 1;
+        }
+    } 
+}
+.nav-header {
+    padding: 20px;
+    font-size: 30px;
+    background: #403e74;
+    color: #fff;
+}
+button.close-nav {
+    background: none;
+    border: none;
+    color: #fff;
+    float: right;
+    position: relative;
+    top: -2px;
+    font-size: 35px;
+}
+.section__products .row .col-md-6 {
+    position: relative;
+    transform: translateX(30px);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.section__products .row .col-md-6.in-view {
+    transform: translateX(0px);
+    opacity: 1;
+}
