@@ -308,18 +308,18 @@
                 <section class="section__products">
                     <div class="container">
                         <div class="row">
-                            <% for(var i=0; i<desclist.length; i++) {%>
+                            <% for(var i=0; i<title.length; i++) {%>
                                 <div class="col-sm-12 col-md-6 col-lg-3">
                                     <div class="item__box">
-                                        <div class="item__img" style="background-image: url('https://dl.airtable.com/.attachments/0ffd81cd9358c7aad6509b1becfac82b/06783369/99021c8890352e5fd77400efb46228ef405.jpgw620h346zc1')">
+                                        <div class="item__img" style="background-image: url('<%= image[i]%>')">
         
                                         </div>
                                         <div class="item__desc">
                                             <div class="item__case">
-                                                <p><span class="icon icon-case"></span><%= ctype[i]%></p>
+                                                <p><span class="icon icon-case"></span><%= type[i]%></p>
                                             </div>
                                             <div class="item__txt">
-                                                <h3><%= namelist[i]%></h3>
+                                                <h3><%= title[i]%></h3>
                                             </div>
                                         </div>
                                     </div>

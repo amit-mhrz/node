@@ -4,9 +4,9 @@ var ejs = require('ejs');
 
 //airtable
 const airtable = require("airtable");
-const base = airtable.base("applhVSojCvSFtpSz");
-const news = base("News");
-const all = news.select({view: "All view"})
+const base = airtable.base("appwCVWnPVFH8JbFq");
+const news = base("Weekly Report");
+const all = news.select({view: "Main View"})
 
 // ...
 app.set('view engine', 'ejs');
@@ -23,24 +23,26 @@ app.get('/', (req, res) => {
     console.log('error');
   }
 
-  const names         = records.map(record => record.get("Title"));
-  const image         = records.map(record => record.get("Image"));
-  const desc          = records.map(record => record.get("Description"));
-  const content_type  = records.map(record => record.get("Content Type"));
-  const cities        = records.map(record => record.get("City"));
-  const focus_area    = records.map(record => record.get("Focus Area"));
-  const impact        = records.map(record => record.get("Impact"));
-  console.log(image);
+  const name          = records.map(record => record.get("Title/Topic"));
+  const type          = records.map(record => record.get("Type"));
+  const date          = records.map(record => record.get("Date"));
+  const clipping      = records.map(record => record.get("Clipping"));
+  const publication   = records.map(record => record.get("Publication"));
+  const link_1        = records.map(record => record.get("Link 1"));
+  const author        = records.map(record => record.get("Author"));
+  const image         = records.map(record => record.get("Attachment"));
+  // console.log(image);
 
     res.render('index', {
     title: 'Homepage',
-    namelist: names,
-    image: image,
-    desclist: desc,
-    ctype: content_type,
-    cities: cities,
-    focus_area: focus_area,
-    impact: impact
+    title: name,
+    type: type,
+    date: date,
+    clipping: clipping,
+    publication: publication,
+    link_1: link_1,
+    author: author,
+    image: image
   });
 })
 
