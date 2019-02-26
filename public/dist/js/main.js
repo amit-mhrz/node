@@ -3,17 +3,9 @@ jQuery(function ($) {
   noUiSlider.create(slider, {
     start: [2002, 2017],
     connect: true,
+    step: 1,
     range: {
       'min': 2000,
-      // '10%': 2001,
-      // '20%': 2002,
-      // '30%': 2003,
-      // '40%': 2004,
-      // '50%': 2005,
-      // '60%': 2006,
-      // '70%': 2007,
-      // '80%': 2008,
-      // '90%': 2009,
       'max': 2035
     }
   });
@@ -46,10 +38,12 @@ jQuery(function ($) {
     if (wScroll > 10) {
       $('.section__filter').addClass('sticky');
       $('.content__bottom').addClass('sticky');
+      $('header').addClass('sticky');
       $(".filter__fade").fadeOut(); // $(".filter__sticky").fadeIn();
     } else {
       $('.section__filter').removeClass('sticky');
       $('.content__bottom').removeClass('sticky');
+      $('header').removeClass('sticky');
       $(".filter__fade").fadeIn(); // $(".filter__sticky").fadeOut();
     }
 
@@ -60,6 +54,13 @@ jQuery(function ($) {
         }, 150 * (i + 1));
       });
     }
+  });
+  $(window).on('load', function () {
+    $('.section__products .row .col-md-6').each(function (i) {
+      setTimeout(() => {
+        $('.section__products .row .col-md-6').eq(i).addClass('in-view');
+      }, 150 * (i + 1));
+    });
   });
   $('.icon__holder').click(function () {
     $(this).toggleClass('active');

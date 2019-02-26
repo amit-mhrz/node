@@ -50,7 +50,13 @@ $regularSize: 14;
 // ----------------------------------------------------------------------
 $mont: 'Montserrat', sans-serif;
 $cardo: 'Cardo', serif;
-$basefont-family : $mont;
+$nregular: 'National-Regular';
+$nbook: 'National Book';
+$nmd: 'National-Medium';
+$nsemi: 'National-Semibold';
+$nBIt: 'National-BoldItalic';
+$nB: 'National-Bold';
+$basefont-family : $nregular;
 // ----------------------------------------------------------------------
   // Grid
 // ----------------------------------------------------------------------

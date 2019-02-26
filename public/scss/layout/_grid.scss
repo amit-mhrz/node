@@ -6,7 +6,7 @@
 }
 @media (max-width: 1440px) {
     section.content__bottom {
-        margin-top: 594px;
+        margin-top: 360px;
     }
     .filter__contentType .icon__holder {
         height: 85px;
@@ -33,19 +33,8 @@
     .section__filter .row .col-sm-3:not(:nth-child(1)) .filter__info {
         margin-bottom: 30px;
     }
-    h1 {
-        font-size: 45px;
-    }
-    h2 {
-        font-size: 19px;
-        margin-bottom: 9px;
-    }
-    h1 span {      
-        font-size: 18px;  
-        padding: 1px 11px 3px;
-    }
     section.content__bottom.sticky {
-        margin-top: 338px;
+        margin-top: 258px;
     }
     .section__filter.sticky {
         padding: 20px 0 34px;
@@ -63,8 +52,7 @@
         max-width: 30%;
     }
     .section__filter {
-        top: 143px;  
-        padding: 40px 0 40px;
+        padding: 30px 0 30px;
     }
     .section__products .item__txt h3 {
         font-size: 20px;

@@ -1,12 +1,19 @@
 const express = require('express');
 const app = express();
 var ejs = require('ejs');
+var _ = require('lodash');
 
 //airtable
 const airtable = require("airtable");
-const base = airtable.base("appwCVWnPVFH8JbFq");
+const base = airtable.base("appH81X67TStprrkF");
+
+//base "Weekly Report"
 const news = base("Weekly Report");
 const all = news.select({view: "Main View"})
+
+//base "Type"
+const type = base("Type");
+const all_type = type.select({view: "Grid view"})
 
 // ...
 app.set('view engine', 'ejs');
@@ -16,37 +23,37 @@ app.use(express.static(__dirname + '/public'));
 // ...
 
 app.get('/', (req, res) => {
-
   all.firstPage((error, records)=>{
-
+  var datas = [];
   if(error){
-    console.log('error');
+    console.log('Error on airtable data fetch');
   }
+  if( records ){
+    for (var i = 0; i < records.length; i++) {
+      (function (i) {
+        if( records[i].fields ) {
+          var fAttchmnt = _.first(records[i].fields['Attachment']);
 
-  const name          = records.map(record => record.get("Title/Topic"));
-  const type          = records.map(record => record.get("Type"));
-  const date          = records.map(record => record.get("Date"));
-  const clipping      = records.map(record => record.get("Clipping"));
-  const publication   = records.map(record => record.get("Publication"));
-  const link_1        = records.map(record => record.get("Link 1"));
-  const author        = records.map(record => record.get("Author"));
-  const image         = records.map(record => record.get("Attachment"));
-  // console.log(image);
+          if( _.has( fAttchmnt, 'url') ) {
+            records[i].fields.img = fAttchmnt.url;
+          } else{
+            records[i].fields.img = 'https://dl.airtable.com/3WxUtpN8SQaLCDckypZW_thumb%20(2).jpeg';
+          }
 
-    res.render('index', {
-    title: 'Homepage',
-    title: name,
-    type: type,
-    date: date,
-    clipping: clipping,
-    publication: publication,
-    link_1: link_1,
-    author: author,
-    image: image
+          datas.push(records[i].fields);
+        }
+      })(i);
+    }
+  }
+  // console.log(records);
+  res.render('index', {
+      datas: datas
   });
-})
+  })
+});
 
-
+app.get('/details', (req, res)  => {
+  res.render('details');
 });
 
 port = process.env.PORT || 7000;
